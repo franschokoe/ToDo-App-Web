@@ -1,0 +1,107 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.main-content{
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 20px;
+    text-align: center;
+    background:white;
+    padding-bottom: 25px;
+    /* height: 80vh; */
+    box-shadow: 0px 4px 6px 4px rgba(0, 0, 0, 0.11);
+    width: 450px;
+    margin-top: 40px;
+}
+.container h1{
+    font-size: 48px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 20px;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    gap: 23px;
+}
+.content p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+.textField {
+    font-size: 20px;
+    border-color: #c392ec63;
+    border-style: solid;
+    border-radius: 5px;
+    padding-left: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.submit{
+    font-size: 20px;
+    width: 120px;
+    border-style: solid;
+    border-color: #c4c3c356;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    border-radius: 5px;
+    background-color: #C392EC;
+}
+.todo{
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.todo-item{
+    text-align: left;
+    line-height: 35px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 31px;
+    padding-right: 31px;
+    border-bottom-width: 5px;
+    margin-bottom: 5px;
+    border-bottom-color: red;
+}
+.todo-item li {
+    list-style-type: none;
+    font-size: 29px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.delete-btn{
+    background: transparent;
+    border: none;
+    color: red;
+    cursor: pointer;
+    
+}
+.delete-btn span{
+    font-size: 29px;
+}
+
+@media all and (max-width:480px ){
+    .container{
+        width: 90%;
+        padding:20px;
+    }
+    .todo-item li{
+        font-size: 20px;
+    }
+    .delete-btn span{
+    font-size: 20px;
+    }
+
+}
